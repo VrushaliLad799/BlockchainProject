@@ -1,0 +1,98 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('forest-view.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+.form-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"] {
+    padding: 8px;
+}
+
+.form-container button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.retrieved-batch-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.account-container {
+    text-align: center;
+    margin-bottom: 20px;
+    size: 0cap;
+    font-size: 24px;
+    color: black;
+}
+
+.account-container #account {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.account-container #account span {
+    color: black;
+}
+.add-batch-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.add-batch-form h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-batch-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.add-batch-form select, .add-batch-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.add-batch-form button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

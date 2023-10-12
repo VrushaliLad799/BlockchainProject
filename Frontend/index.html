@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traceable Timber Supply Chain</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="vendor/truffle-contract/dist/truffle-contract.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Traceable Timber Supply Chain</h1>
+        <div class="form-container">
+            <label for="batchId">Enter Batch ID:</label>
+            <input type="text" id="batchId" placeholder="Batch ID">
+            <button id="retrieveButton">Retrieve</button>
+        </div>
+        <div id="retrievedBatchContainer" class="retrieved-batch-container">
+            <!-- Retrieved batch information will be displayed here -->
+        </div>
+        <div class="account-container">
+            <p>Your Ethereum Account Address: <span id="account"></span></p>
+        </div>
+    </div>
+    <div class="add-batch-form">
+        <h2>Add New Batch</h2>
+        <label for="newBatchId">Batch ID:</label>
+        <input type="text" id="newBatchId" placeholder="Batch ID">
+        <label for="initialStage">Initial Stage:</label>
+        <select id="initialStage">
+            <option value="Harvest">Harvest</option>
+            <option value="Transport">Transport</option>
+            <option value="Processing">Processing</option>
+            <option value="Distribution">Distribution</option>
+          </select>      
+        <label for="initialLocation">Initial Location:</label>
+        <input type="text" id="initialLocation" placeholder="Initial Location">
+        <button id="addBatchButton">Add Batch</button>
+    </div>
+</body>
+</html>
+
